@@ -1,0 +1,24 @@
+---
+version: 3.7.2
+hassio_api: true
+slug: nginx_proxy_bumper
+name: NGINX Home Assistant SSL proxy
+description: An SSL/TLS proxy
+url: https://github.com/home-assistant/addons/tree/master/nginx_proxy
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+#image: homeassistant/{arch}-addon-nginx_proxy
+init: false
+map:
+  - ssl
+  - share
+ports:
+  443/tcp: 443
+  8007/tcp: 8007
+  5223/tcp: 5223
+  8883/tcp: 8883
+startup: services
