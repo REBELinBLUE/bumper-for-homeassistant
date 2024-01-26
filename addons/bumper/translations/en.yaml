@@ -1,0 +1,7 @@
+---
+configuration:
+  ssl:
+    name: Enable SSL
+    description: Enable usage of SSL on the webserver inside the add-on
+network:
+  8008/tcp: The webserver port
