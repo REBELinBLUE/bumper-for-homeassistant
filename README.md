@@ -1,1 +1,3 @@
 # bumper-for-homeassistant
+
+This is an implementation of bmartin5692/bumper on homeassistant. It contains of a nginx - server that pretty much forward traffic from port 443 to 8883 (containing a ecovacs - mq call). It also only catch ecovacs calls. And the bumper server. Atm 2 Addons in the dir addons are created. One could argue that everything could run as one addon, but most people already use a nginx server for other stuff. They can skip the nginx_bumper addon and just adjust the nginx.conf. Both needs to be running on startup of homeassistant (atm starting on "system"-level) if you want to use bittles/ha_ecovacs_bumper implementation.
