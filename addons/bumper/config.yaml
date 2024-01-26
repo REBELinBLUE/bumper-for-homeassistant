@@ -1,0 +1,15 @@
+
+name: "bumper"
+description: "A standalone and self-hosted implementation of the central server used by Ecovacs vacuum robots."
+version: "1.0.6"
+slug: "bumper-for-ha"
+arch: 
+  - aarch64
+  - amd64
+host_network: false
+startup: system
+map:
+  - addons:rw
+discovery:
+  - mqtt
+webui: http://[HOST]:[PORT:8007]
